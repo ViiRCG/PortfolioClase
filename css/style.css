@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(37, 37, 37);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -10,16 +10,18 @@ body{
     --texto: aliceblue; 
     --fuente: Nunito; 
 }
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: Nunito;
     src: url(../assets/fonts/Nunito-VariableFont_wght.ttf);
 }
 .nav{
-    border: 1px solid rgb(65, 179, 4);
     height: 380px;
 }
 .nav__list{
-    border: 1px solid violet;
+
     list-style-type: none;
     height: 100%;
     display: flex;
@@ -54,12 +56,12 @@ body{
 }
 
 .encabezado{
-    border: 1px solid red;
     position: fixed;
-    top: 8px;
-    left: 100px;
+    background-color: rgb(49, 49, 49);
+    top: 0px;
+    left: 50px;
     min-height: 100vh;
-    max-width: 15vw;
+    max-width: 20vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -82,7 +84,6 @@ body{
     border-radius: 50px;
 }
 .encabezado__nombre{
-    border: 1px solid pink;
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -94,10 +95,11 @@ body{
     color: var(--texto);
 }
 .nombre{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    
 }
 .subnombre{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /*MAIN*/
@@ -106,14 +108,65 @@ body{
     min-height: 100vh;
     max-width: 90vw;
     margin: 0 5rem 0 27rem;
-    
-}
-.inicio{
-    border: 1px solid red;
-    height: 20vh;
+    font-family: var(--fuente);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    color: var(--texto);
 }
+.inicio{
+    border: 1px solid pink;
+    height: 32vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+    margin-top: 20vh;
+    
+}
+.subtitle{
+    color: rgb(168, 109, 0);
+}
+.button{
+    border: 1px solid black;
+    background-color:rgb(83, 83, 83);
+    width: 6vw;
+    height: 3vh;
+    padding-top: 4px;
+    border-radius: 15px;
+    text-align: center;
+   
+}
+.button__a{
+    color: var(--texto);
+    text-decoration: none;
+    margin-right: 5px;
+    
+}
+.fas{
+    color: rgb(168, 109, 0);
+}
+
+.button__a:hover{
+    color: black;
+    
+}
+
+.button:hover>.fas{
+    color: black;
+    
+}
+.button:hover{
+    background-color:rgb(168, 109, 0);
+}
+/*SOBRE MI*/
+.sobremi{
+    border: 1px solid pink;
+
+}
+
+
+
+
+
