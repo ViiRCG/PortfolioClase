@@ -1,27 +1,28 @@
-.menu-usu{
-    display: flex;
-    align-items: center;
-    height: 100px;
+:root{
+    --texto: rgb(120, 119, 119); 
+    --fuente: PT sansb; 
 }
 .nav{
-   
-    height: 80px;
+    border: 1px solid rgb(65, 179, 4);
+    /* height: 200px; */
 }
 .nav__list{
     border: 1px solid violet;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    font-family: PT sansb;
+    font-family: var(--fuente);
 }
 .nav__item{
-    font-size: 0.8rem;
+    border: 1px solid rgb(130, 238, 153);
+    font-size: 1.2rem;
     margin: 20px;
     height: 20px;
 }
 .nav__link{
     text-decoration: none;
-    color: rgb(122, 122, 122);
+    color: var(--texto);
+    font-variant: small-caps;
     
 }
 

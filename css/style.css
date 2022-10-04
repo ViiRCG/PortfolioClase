@@ -1,16 +1,75 @@
-:root{
-    
-}
 body{
     background-color: rgb(48, 48, 48);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+    
 }
+:root{
+    --texto: aliceblue; 
+    --fuente: Nunito; 
+}
+@font-face {
+    font-family: Nunito;
+    src: url(../assets/fonts/Nunito-VariableFont_wght.ttf);
+}
+.nav{
+    border: 1px solid rgb(65, 179, 4);
+    height: 380px;
+}
+.nav__list{
+    border: 1px solid violet;
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--fuente);
+    padding: 0;
+}
+.nav__item{
+    border: 1px solid rgb(83, 83, 83);
+    background-color:rgb(83, 83, 83);
+    font-size: 1.2rem;
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.nav__link{
+    text-decoration: none;
+    color: var(--texto);
+    font-variant: small-caps;
+    
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+
 .encabezado{
     border: 1px solid red;
+    position: fixed;
+    top: 8px;
+    left: 100px;
     min-height: 100vh;
-    max-width: 10vw;
+    max-width: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.encabezado__capa{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .encabezado__img{
     width: 100px;
@@ -20,9 +79,41 @@ body{
 .img{
     width: 100%;
     height: 100%;
+    border-radius: 50px;
 }
+.encabezado__nombre{
+    border: 1px solid pink;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: var(--fuente);
+    color: var(--texto);
+}
+.nombre{
+    font-size: 1.8rem;
+}
+.subnombre{
+    font-size: 0.8rem;
+}
+
+/*MAIN*/
 .contenido{
     border: 1px solid green;
     min-height: 100vh;
     max-width: 90vw;
+    margin: 0 5rem 0 27rem;
+    
+}
+.inicio{
+    border: 1px solid red;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
